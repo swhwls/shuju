@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-accent="vermilion">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 漫剧全网实时流量监控</title>
+<meta name="description" content="AI 漫剧全网实时流量监控大屏 · 1920×1080 单屏 · 编辑排版风格">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<!-- 固定 1920×1080 舞台：由 app.js 按窗口等比缩放，全屏不出现滚动条 -->
+<div id="stage">
+  <div id="dash">
+    <!-- 报头 -->
+    <header id="masthead"></header>
+    <!-- 指标带：6 项核心指标通栏，竖向发丝线分隔 -->
+    <section id="kpiBand"></section>
+    <!-- 正文 12 栅格：上下两栏，纵向边线对齐于 5|6 与 8|9 -->
+    <div id="bodyGrid">
+      <div class="cell" id="cellMap"></div>
+      <div class="cell" id="cellSideA"></div>
+      <div class="cell" id="cellSideB"></div>
+      <div class="cell" id="cellTrend"></div>
+      <div class="cell" id="cellSource"></div>
+      <div class="cell" id="cellAlert"></div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/echarts.min.js"></script>
+<script src="assets/china.geo.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
